@@ -4,8 +4,7 @@ import mongoose from 'mongoose';
 import { setupServer } from './server';
 import dotenv from 'dotenv';
 dotenv.config();
-//TODO Pagination server side 
-import  Apartment from './models/schema1'; // Importing the model
+
 
 const app = express();
 const port = 3000;
@@ -25,9 +24,3 @@ mongoose.connect(process.env.dbURI)
     });
   })
   .catch((err) => console.log(err));
-// mongoose.connect(dbURI)
-// .then((result) => app.listen(port, () => {
-//     console.log(`Server is listening on port ${port}`);
-// }))
-// .catch((err) => console.log(err));
-

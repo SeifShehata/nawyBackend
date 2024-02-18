@@ -24,7 +24,7 @@ const schema1=new Schema({//this object describes the structure of the docs stor
         required:true,
     },
     imgUrls: {
-        type: [String], // Array of Strings (image URLs)
+        type: [String], 
         required: false,
       },
       additionalFees:{

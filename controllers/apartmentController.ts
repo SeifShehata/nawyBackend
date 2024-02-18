@@ -1,7 +1,6 @@
 import { Request, Response } from 'express';
 import Apartment from '../models/schema1';
 import { FilterQuery } from 'mongoose';
-/* how to start this application with the scripts, and readme*/
  const addApartment = (req: Request, res: Response) => {
   // Destructure request body
   const { name,
@@ -81,19 +80,6 @@ import { FilterQuery } from 'mongoose';
             });
     };
 
-//  const listApartments = (req: Request, res: Response) => {
-//   // Find all apartments in the database
-//   Apartment.find()
-//   .then((result) => {
-//       // Respond with the list of apartments
-//       res.json(result);
-//   })
-//   .catch((err) => {
-//       console.log(err);
-//       // Respond with an error if find fails
-//       res.status(500).json({ error: 'Internal Server Error' });
-//   });
-// };
 
    const getApartmentDetails = (req: Request, res: Response) => {
     // Extract apartment ID from request parameters

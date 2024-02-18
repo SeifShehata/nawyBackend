@@ -16,5 +16,4 @@ export const setupServer = (app: express.Application) => {
   // Set up routes
   setupApartmentRoutes(app);
 
-  // Default route for serving the index.html file
 };
